@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+   <default>
+    	<reference name="head">
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/description_select"><type>skin_css</type><name>css/collapse/description.css</name><params/></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/shortdescription_select"><type>skin_css</type><name>css/collapse/shortdescription.css</name><params/></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/compare_select"><type>skin_css</type><name>css/collapse/compare.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/mycart_select"><type>skin_css</type><name>css/collapse/mycart.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/poll_select"><type>skin_css</type><name>css/collapse/poll.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/tags_select"><type>skin_css</type><name>css/collapse/tags.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/productviewed_select"><type>skin_css</type><name>css/collapse/productviewed.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/related_select"><type>skin_css</type><name>css/collapse/related.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/newsletter_select"><type>skin_css</type><name>css/collapse/newsletter.css</name></action>
+			
+            <action method="addJs">
+            	<script>jquery/jquery.min.js</script>
+            </action>
+            
+            <action method="addJs">
+            	<script>jquery/collapse/jquery.collapse.js</script>
+            </action>
+            
+            <action method="addJs">
+            	<script>jquery/jquery.rotate.js</script>
+            </action>
+            
+            <action method="addJs">
+            	<script>jquery/noconflict.js</script>
+            </action>
+            
+            <action method="removeItem"><type>js</type><name>prototype/prototype.js</name></action>
+            <action method="addJs">
+    			<script>prototype/prototype.js</script>
+    		</action>
+    		
+    		<action method="removeItem"><type>js</type><name>lib/ccard.js</name></action>
+            <action method="addJs">
+    			<script>lib/ccard.js</script>
+    		</action>
+            
+    		<action method="removeItem"><type>js</type><name>prototype/validation.js</name></action>
+            <action method="addJs">
+    			<script>prototype/validation.js</script>
+    		</action>
+    		
+    		<action method="removeItem"><type>js</type><name>scriptaculous/builder.js</name></action>
+            <action method="addJs">
+    			<script>scriptaculous/builder.js</script>
+    		</action>   
+    		
+    		<action method="removeItem"><type>js</type><name>scriptaculous/effects.js</name></action>
+            <action method="addJs">
+    			<script>scriptaculous/effects.js</script>
+    		</action>      		
+    		
+    		<action method="removeItem"><type>js</type><name>scriptaculous/dragdrop.js</name></action>
+            <action method="addJs">
+    			<script>scriptaculous/dragdrop.js</script>
+    		</action>   
+    	
+    		<action method="removeItem"><type>js</type><name>scriptaculous/controls.js</name></action>
+            <action method="addJs">
+    			<script>scriptaculous/controls.js</script>
+    		</action>
+    		
+    		<action method="removeItem"><type>js</type><name>scriptaculous/slider.js</name></action>
+            <action method="addJs">
+    			<script>scriptaculous/slider.js</script>
+    		</action>    		
+
+    		<action method="removeItem"><type>js</type><name>varien/js.js</name></action>
+            <action method="addJs">
+    			<script>varien/js.js</script>
+    		</action>
+    		
+    		<action method="removeItem"><type>js</type><name>varien/form.js</name></action>
+            <action method="addJs">
+    			<script>varien/form.js</script>
+    		</action>    		
+
+    		<action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
+            <action method="addJs">
+    			<script>varien/menu.js</script>
+    		</action> 
+    		
+    		<action method="removeItem"><type>js</type><name>mage/translate.js</name></action>
+            <action method="addJs">
+    			<script>mage/translate.js</script>
+    		</action>     	
+    		
+    		<action method="removeItem"><type>js</type><name>mage/cookies.js</name></action>
+            <action method="addJs">
+    			<script>mage/cookies.js</script>
+    		</action>        			
+
+    		<action method="removeItem"><type>js</type><name>varien/product.js</name></action>
+            <action method="addJs">
+    			<script>varien/product.js</script>
+    		</action> 
+
+    		<action method="removeItem"><type>js</type><name>varien/configurable.js</name></action>
+            <action method="addJs">
+    			<script>varien/configurable.js</script>
+    		</action>     		
+
+    		<action method="removeItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addJs">
+    			<script>calendar/calendar.js</script>
+    		</action>
+   
+			<action method="removeItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+			<action method="addJs">
+				<script>calendar/calendar-setup.js</script>
+			</action>
+		</reference>
+
+		<reference name="footer">
+            <block type="core/template" template="collapse/js.phtml" name="collapse.js"></block>
+        </reference>
+	</default>
+</layout> 

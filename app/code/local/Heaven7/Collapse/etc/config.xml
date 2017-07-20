@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <modules>
+    <Heaven7_Collapse>
+      <version>1.0.0</version>
+    </Heaven7_Collapse>
+  </modules>
+ 
+
+  <default>
+    <catalog>
+      <collapse></collapse>
+    </catalog>
+  </default>
+  
+  
+  <frontend>
+        <layout>
+            <updates>
+                <collapse>
+                    <file>collapse.xml</file>
+                </collapse>
+            </updates>
+        </layout>
+        
+    </frontend>
+
+<global>
+
+        <models>
+            <collapse>
+                <class>Heaven7_Collapse_Model</class>
+            </collapse>
+        </models>
+
+        <helpers>
+            <collapse>
+                <class>Heaven7_Collapse_Helper</class>
+            </collapse>
+        </helpers>
+     </global>
+     
+     <adminhtml>
+    <acl>
+        <resources>
+            <all>
+                <title>Heaven7</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <heaven7_collapse>
+                                        <title>Heaven7 Collapse</title>
+                                    </heaven7_collapse>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    	<translate>
+			<modules>
+				<Heaven7_Collapse>
+					<files>
+						<default>Heaven7_Collapse.csv</default>
+					</files>
+				</Heaven7_Collapse>
+			</modules>
+		</translate>
+</adminhtml>
+
+</config>

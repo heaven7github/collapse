@@ -1,0 +1,436 @@
+<?php if (Mage::getStoreConfig('heaven7_collapse/description/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/description/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".box-description > div.std").addClass('close').hide();
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".box-description > div.std").addClass('open');
+			<?php $status = "open";?>
+		<?php endif; ?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/description/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.box-description > h2').html("<div id='description_icon' class='collapse_icon before <?php echo $status?>'></div>"+jQuery('.box-description > h2').html());
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/description/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.box-description > h2').html(jQuery('.box-description > h2').html()+"<div id='description_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		//add click event to .box-description > h2 
+		jQuery(".box-description > h2").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/description/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/description/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#description_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".box-description > div.std").hasClass('open')) {
+				jQuery(".box-description > div.std").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".box-description > div.std").slideDown($speed).addClass('open').removeClass('close');
+			}
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/shortdescription/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/shortdescription/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".short-description > div.std").addClass('close').hide();
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".short-description > div.std").addClass('open');
+			<?php $status = "open";?>
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/shortdescription/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.short-description > h2').html("<div id='shortdescription_icon' class='collapse_icon before <?php echo $status?>'></div>"+jQuery('.short-description > h2').html());
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/shortdescription/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.short-description > h2').html(jQuery('.short-description > h2').html()+"<div id='shortdescription_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+		
+		//add click event to .short-description > h2
+		jQuery(".short-description > h2").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/shortdescription/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/shortdescription/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#shortdescription_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".short-description > div.std").hasClass('open')) {
+				jQuery(".short-description > div.std").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".short-description > div.std").slideDown($speed).addClass('open').removeClass('close');
+			}
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/tags/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/tags/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".box-tags > #addTagForm, .box-tags > .note").addClass('close').hide();
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".box-tags > #addTagForm, .box-tags > .note").addClass('open');
+			<?php $status = "open";?>
+		<?php endif; ?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/tags/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.box-tags > h2').html("<div id='tags_icon' class='collapse_icon before <?php echo $status?>'></div>"+jQuery('.box-tags > h2').html());
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/tags/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.box-tags > h2').html(jQuery('.box-tags > h2').html()+"<div id='tags_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		//add click event to .box-tags > h2
+		jQuery(".box-tags > h2").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/tags/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/tags/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#tags_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".box-tags > #addTagForm").hasClass('open')) {
+				jQuery(".box-tags > #addTagForm").slideUp($speed, function (){
+					jQuery(".box-tags > .note").slideUp($speed);
+				}).removeClass('open').addClass('close');
+			} else {
+				jQuery(".box-tags > #addTagForm").slideDown($speed, function (){
+					jQuery(".box-tags > .note").slideDown($speed);
+				}).addClass('open').removeClass('close');
+			}
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/poll/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/poll/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".block-poll > #pollForm").addClass('close').hide();
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".block-poll > #pollForm").addClass('open');
+			<?php $status = "open";?>
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/poll/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.block-poll > .block-title > strong').before("<div id='poll_icon' class='collapse_icon before <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/poll/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.block-poll > .block-title > strong').before("<div id='poll_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		//add click event to 
+		jQuery(".block-poll > .block-title").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/poll/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/poll/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#poll_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".block-poll > #pollForm").hasClass('open')) {
+				jQuery(".block-poll > #pollForm").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".block-poll > #pollForm").slideDown($speed).addClass('open').removeClass('close'); 
+			}
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".block-cart > .block-content").addClass('close').hide();
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".block-cart > .block-content").addClass('open');
+			<?php $status = "open";?>
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.block-cart > .block-title > strong').before("<div id='mycart_icon' class='collapse_icon before <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.block-cart > .block-title > strong').before("<div id='mycart_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		//add click event to .block-cart > .block-title
+		jQuery(".block-cart > .block-title").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/mycart/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#mycart_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".block-cart > .block-content").hasClass('open')) {
+				jQuery(".block-cart > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".block-cart > .block-content").slideDown($speed).addClass('open').removeClass('close'); 
+			}
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/compare/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/compare/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".block-compare > .block-content").addClass('close').hide();
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".block-compare > .block-content").addClass('open');
+			<?php $status = "open";?>
+		<?php endif; ?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/compare/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.block-compare > .block-title > strong').before("<div id='compare_icon' class='collapse_icon before <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/compare/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.block-compare > .block-title > strong').before("<div id='compare_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		//add click event to .block-compare > .block-title
+		jQuery(".block-compare > .block-title").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/compare/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/compare/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#compare_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".block-compare > .block-content").hasClass('open')) {
+				jQuery(".block-compare > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".block-compare > .block-content").slideDown($speed).addClass('open').removeClass('close');
+			}
+	  });
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".block-viewed > .block-content").hide().addClass('close');
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".block-viewed > .block-content").addClass('open');
+			<?php $status = "open";?>
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.block-viewed > .block-title > strong').before("<div id='productviewed_icon' class='collapse_icon before <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.block-viewed > .block-title > strong').before("<div id='productviewed_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+		
+		//add click event to .block-viewed > .block-title
+		jQuery(".block-viewed > .block-title").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/productviewed/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#productviewed_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".block-viewed > .block-content").hasClass('open')) {
+				jQuery(".block-viewed > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".block-viewed > .block-content").slideDown($speed).addClass('open').removeClass('close');
+			}
+			
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".block-subscribe > #newsletter-validate-detail").hide().addClass('close');
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".block-subscribe > #newsletter-validate-detail").addClass('open');
+			<?php $status = "open";?>
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.block-subscribe > .block-title > strong').before("<div id='newsletter_icon' class='collapse_icon before <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.block-subscribe > .block-title > strong').before("<div id='newsletter_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+		
+		//add click event to .block-subscribe > .block-title
+		jQuery(".block-subscribe > .block-title").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/newsletter/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#newsletter_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".block-subscribe > #newsletter-validate-detail").hasClass('open')) {
+				jQuery(".block-subscribe > #newsletter-validate-detail").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".block-subscribe > #newsletter-validate-detail").slideDown($speed).addClass('open').removeClass('close');
+			}
+			
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/related/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/related/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".block-related > .block-content").hide().addClass('close');
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".block-related > .block-content").addClass('open');
+			<?php $status = "open";?>
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/related/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.block-related > .block-title > strong').before("<div id='related_icon' class='collapse_icon before <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/related/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.block-related > .block-title > strong').before("<div id='related_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+		
+		//add click event to .block-related > .block-title
+		jQuery(".block-related > .block-title").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/related/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/related/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#related_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".block-related > .block-content").hasClass('open')) {
+				jQuery(".block-related > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".block-related > .block-content").slideDown($speed).addClass('open').removeClass('close');
+			}
+			
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>
+
+<?php if (Mage::getStoreConfig('heaven7_collapse/upsell/enabled_select',Mage::app()->getStore())==1): ?>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		<?php if (Mage::getStoreConfig('heaven7_collapse/upsell/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
+			jQuery(".box-up-sell > div.std").hide().addClass('close');
+			<?php $status = "close";?>
+		<?php else:?>
+			jQuery(".box-up-sell > div.std").addClass('open');
+			<?php $status = "open";?>
+		<?php endif; ?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/upsell/icon_select',Mage::app()->getStore())=="before"): ?>
+			jQuery('.box-up-sell > h2').html("<div id='upsell_icon' class='collapse_icon before <?php echo $status?>'></div>"+jQuery('.box-up-sell > h2').html());
+		<?php endif;?>
+
+		<?php if (Mage::getStoreConfig('heaven7_collapse/upsell/icon_select',Mage::app()->getStore())=="after"): ?>
+			jQuery('.box-up-sell > h2').html(jQuery('.box-up-sell > h2').html()+"<div id='upsell_icon' class='collapse_icon after <?php echo $status?>'></div>");
+		<?php endif;?>
+
+		//add click event to .box-description > h2
+		jQuery(".box-description > h2").click(function()
+		{
+			//define speed for effect
+			var $speed = 400;
+
+			<?php if (Mage::getStoreConfig('heaven7_collapse/upell/icon_select',Mage::app()->getStore())=="before"
+					|| Mage::getStoreConfig('heaven7_collapse/upsell/icon_select',Mage::app()->getStore())=="after"): ?>
+				jQuery("#upsell_icon").animate({rotate: '+=180deg'}, $speed);
+			<?php endif;?>
+
+			//check to see if the class 'open' exists then run
+			if (jQuery(".box-up-sell > div.std").hasClass('open')) {
+				jQuery(".box-up-sell > div.std").slideUp($speed).removeClass('open').addClass('close');
+			} else {
+				jQuery(".box-up-sell > div.std").slideDown($speed).addClass('open').removeClass('close');
+			}
+		});
+	});
+	//]]>
+	</script>
+<?php endif; ?>

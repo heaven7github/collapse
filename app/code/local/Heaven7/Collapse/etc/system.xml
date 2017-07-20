@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <heaven7_collapse translate="label" module="collapse">
+            <label>Heaven7 Extensions</label>
+            <sort_order>100</sort_order>
+        </heaven7_collapse>
+    </tabs>
+    <sections>
+        <heaven7_collapse translate="label" module="collapse">
+            <label>Collapse</label>
+            <tab>heaven7_collapse</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<description translate="label" module="collapse">
+                    <label>Product description</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow product description collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</description>
+               	
+            	<shortdescription translate="label" module="collapse">
+                    <label>Product short description</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow product short description collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</shortdescription>
+               	
+               	<tags translate="label" module="collapse">
+                    <label>Product tags</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow product tags collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</tags>
+               	
+               	<poll translate="label" module="collapse">
+                    <label>Poll</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow poll collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</poll>
+               	
+               	<mycart translate="label" module="collapse">
+                    <label>My cart</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow my cart collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</mycart>
+               	
+               	<compare translate="label" module="collapse">
+                    <label>Product compare</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow product compare collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</compare>
+               	
+               	<productviewed translate="label" module="collapse">
+                    <label>Product viewed</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow product viewed collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</productviewed>
+               	
+               	<newsletter translate="label" module="collapse">
+                    <label>Newsletter</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow newsletter collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</newsletter>
+               	
+               	<related translate="label" module="collapse">
+                    <label>Related product</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled_select translate="label">
+                            <label>Enabled:</label>
+                            <comment>Allow related product collapse</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled_select>
+                        
+                        <defaultcollapsed_select translate="label">
+                            <label>Collapsed by default:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </defaultcollapsed_select>
+                        
+                        <icon_select translate="label">
+                            <label>Icon position:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>collapse/icon_position</source_model>
+                        </icon_select>
+                    </fields>
+               	</related>
+            </groups>
+        </heaven7_collapse>
+    </sections>
+</config>
