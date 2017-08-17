@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>heaven7_collapse</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License</license>
+    <channel>Community</channel>
+    <extends/>
+    <summary>jQuery collapse extension</summary>
+    <description>jQuery collapse extension description</description>
+    <notes>jQuery collapse extension</notes>
+    <authors><author><name>Feh&#xE9;rdi L&#xF3;r&#xE1;nd</name><user>heaven7</user><email>feherdi.lorand@gmail.com</email></author></authors>
+    <date>2014-02-23</date>
+    <time>07:18:22</time>
+    <contents><target name="magecommunity"><dir name="Heaven7"><dir name="Collapse"><dir name="Helper"><file name="Data.php" hash="b6b78c7ce7ee45a0a9f4b029265348f6"/></dir><dir name="Model"><dir name="Icon"><file name="Position.php" hash="4aa67843ebb6fe8e08ee967a43089e29"/></dir></dir><dir name="etc"><file name="config.xml" hash="7190e04ae1a4a8ae36a1fdd2bd6b4f67"/><file name="system.xml" hash="9f8385069b8053d7c09660a4d53613dd"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="collapse.xml" hash="ba5d750447c48ca0a63e52982449e871"/></dir><dir name="template"><dir name="collapse"><file name="js.phtml" hash="bfa3c8bb9c39829adaab85740aab7f98"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Heaven7_Collapse.xml" hash="070b6e1acce7b4c725b89805c48f4aae"/></dir></target><target name="mage"><dir name="js"><dir name="jquery"><dir name="collapse"><file name="jquery.collapse.js" hash="99e339a1bec3b331bf813a4999dfd51b"/></dir><file name="jquery.min.js" hash="e1a1b01a12659ff6530a5b8f2dbb18f8"/><file name="jquery.rotate.js" hash="caed8582fa97acd99ced2b8e7ab0ccec"/><file name="noconflict.js" hash="2a423aa7601d85ac86d8140356140602"/></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="collapse"><file name="compare.css" hash="6788a4a6f703ebe886ffa008549d078e"/><file name="description.css" hash="c07907613b1946cfdd7c7cd0fab0193c"/><file name="mycart.css" hash="2323f4dc895b9e3b64f948a8f36619bf"/><file name="newsletter.css" hash="1d90941e38a10728d5e7ffae1042740d"/><file name="poll.css" hash="e2bd34c195781cc5be7a4afc66afb514"/><file name="productviewed.css" hash="568e7f2b00071139867b883d2159e82c"/><file name="related.css" hash="3ce96dc58e854a9c20b2046157de36d8"/><file name="shortdescription.css" hash="1403fdf5cdb70298821f05c9043a5153"/><file name="tags.css" hash="2f1d66d9aa3f575f75813b0c809a08e3"/><file name="upsell.css" hash="8fb43d0d962d160c94d27aaa01952223"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>5.4.8</max></php></required></dependencies>
+</package>

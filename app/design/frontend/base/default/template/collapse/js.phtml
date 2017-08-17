@@ -136,10 +136,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/poll/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".block-poll > #pollForm").addClass('close').hide();
+			jQuery(".block-poll > #pollForm").addClass('close_content').hide();
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".block-poll > #pollForm").addClass('open');
+			jQuery(".block-poll > #pollForm").addClass('open_content');
 			<?php $status = "open";?>
 		<?php endif;?>
 
@@ -148,7 +148,7 @@
 		<?php endif;?>
 
 		<?php if (Mage::getStoreConfig('heaven7_collapse/poll/icon_select',Mage::app()->getStore())=="after"): ?>
-			jQuery('.block-poll > .block-title > strong').before("<div id='poll_icon' class='collapse_icon after <?php echo $status?>'></div>");
+			jQuery('.block-poll > .block-title > strong').after("<div id='poll_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 
 		//add click event to 
@@ -163,10 +163,10 @@
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".block-poll > #pollForm").hasClass('open')) {
-				jQuery(".block-poll > #pollForm").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery(".block-poll > #pollForm").hasClass('open_content')) {
+				jQuery(".block-poll > #pollForm").slideUp($speed).removeClass('open_content').addClass('close_content');
 			} else {
-				jQuery(".block-poll > #pollForm").slideDown($speed).addClass('open').removeClass('close'); 
+				jQuery(".block-poll > #pollForm").slideDown($speed).addClass('open_content').removeClass('close_content');
 			}
 		});
 	});
@@ -179,10 +179,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".block-cart > .block-content").addClass('close').hide();
+			jQuery(".block-cart > .block-content").addClass('close_content').hide();
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".block-cart > .block-content").addClass('open');
+			jQuery(".block-cart > .block-content").addClass('open_content');
 			<?php $status = "open";?>
 		<?php endif;?>
 
@@ -191,7 +191,7 @@
 		<?php endif;?>
 
 		<?php if (Mage::getStoreConfig('heaven7_collapse/mycart/icon_select',Mage::app()->getStore())=="after"): ?>
-			jQuery('.block-cart > .block-title > strong').before("<div id='mycart_icon' class='collapse_icon after <?php echo $status?>'></div>");
+			jQuery('.block-cart > .block-title > strong').after("<div id='mycart_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 
 		//add click event to .block-cart > .block-title
@@ -206,10 +206,10 @@
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".block-cart > .block-content").hasClass('open')) {
-				jQuery(".block-cart > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery(".block-cart > .block-content").hasClass('open_content')) {
+				jQuery(".block-cart > .block-content").slideUp($speed).removeClass('open_content').addClass('close_content');
 			} else {
-				jQuery(".block-cart > .block-content").slideDown($speed).addClass('open').removeClass('close'); 
+				jQuery(".block-cart > .block-content").slideDown($speed).addClass('open_content').removeClass('close_content');
 			}
 		});
 	});
@@ -222,10 +222,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/compare/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".block-compare > .block-content").addClass('close').hide();
+			jQuery(".block-compare > .block-content").addClass('close_content').hide();
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".block-compare > .block-content").addClass('open');
+			jQuery(".block-compare > .block-content").addClass('open_content');
 			<?php $status = "open";?>
 		<?php endif; ?>
 
@@ -234,7 +234,7 @@
 		<?php endif;?>
 
 		<?php if (Mage::getStoreConfig('heaven7_collapse/compare/icon_select',Mage::app()->getStore())=="after"): ?>
-			jQuery('.block-compare > .block-title > strong').before("<div id='compare_icon' class='collapse_icon after <?php echo $status?>'></div>");
+			jQuery('.block-compare > .block-title > strong').after("<div id='compare_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 
 		//add click event to .block-compare > .block-title
@@ -249,10 +249,10 @@
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".block-compare > .block-content").hasClass('open')) {
-				jQuery(".block-compare > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery(".block-compare > .block-content").hasClass('open_content')) {
+				jQuery(".block-compare > .block-content").slideUp($speed).removeClass('open_content').addClass('close_content');
 			} else {
-				jQuery(".block-compare > .block-content").slideDown($speed).addClass('open').removeClass('close');
+				jQuery(".block-compare > .block-content").slideDown($speed).addClass('open_content').removeClass('close_content');
 			}
 	  });
 	});
@@ -265,10 +265,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".block-viewed > .block-content").hide().addClass('close');
+			jQuery(".block-viewed > .block-content").hide().addClass('close_content');
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".block-viewed > .block-content").addClass('open');
+			jQuery(".block-viewed > .block-content").addClass('open_content');
 			<?php $status = "open";?>
 		<?php endif;?>
 
@@ -277,7 +277,7 @@
 		<?php endif;?>
 
 		<?php if (Mage::getStoreConfig('heaven7_collapse/productviewed/icon_select',Mage::app()->getStore())=="after"): ?>
-			jQuery('.block-viewed > .block-title > strong').before("<div id='productviewed_icon' class='collapse_icon after <?php echo $status?>'></div>");
+			jQuery('.block-viewed > .block-title > strong').after("<div id='productviewed_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 		
 		//add click event to .block-viewed > .block-title
@@ -292,10 +292,10 @@
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".block-viewed > .block-content").hasClass('open')) {
-				jQuery(".block-viewed > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery(".block-viewed > .block-content").hasClass('open_content')) {
+				jQuery(".block-viewed > .block-content").slideUp($speed).removeClass('open_content').addClass('close_content');
 			} else {
-				jQuery(".block-viewed > .block-content").slideDown($speed).addClass('open').removeClass('close');
+				jQuery(".block-viewed > .block-content").slideDown($speed).addClass('open_content').removeClass('close_content');
 			}
 			
 		});
@@ -309,10 +309,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".block-subscribe > #newsletter-validate-detail").hide().addClass('close');
+			jQuery(".block-subscribe > #newsletter-validate-detail").hide().addClass('close_content');
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".block-subscribe > #newsletter-validate-detail").addClass('open');
+			jQuery(".block-subscribe > #newsletter-validate-detail").addClass('open_content');
 			<?php $status = "open";?>
 		<?php endif;?>
 
@@ -321,7 +321,7 @@
 		<?php endif;?>
 
 		<?php if (Mage::getStoreConfig('heaven7_collapse/newsletter/icon_select',Mage::app()->getStore())=="after"): ?>
-			jQuery('.block-subscribe > .block-title > strong').before("<div id='newsletter_icon' class='collapse_icon after <?php echo $status?>'></div>");
+			jQuery('.block-subscribe > .block-title > strong').after("<div id='newsletter_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 		
 		//add click event to .block-subscribe > .block-title
@@ -336,10 +336,10 @@
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".block-subscribe > #newsletter-validate-detail").hasClass('open')) {
-				jQuery(".block-subscribe > #newsletter-validate-detail").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery(".block-subscribe > #newsletter-validate-detail").hasClass('open_content')) {
+				jQuery(".block-subscribe > #newsletter-validate-detail").slideUp($speed).removeClass('open_content').addClass('close_content');
 			} else {
-				jQuery(".block-subscribe > #newsletter-validate-detail").slideDown($speed).addClass('open').removeClass('close');
+				jQuery(".block-subscribe > #newsletter-validate-detail").slideDown($speed).addClass('open_content').removeClass('close_content');
 			}
 			
 		});
@@ -353,10 +353,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/related/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".block-related > .block-content").hide().addClass('close');
+			jQuery(".block-related > .block-content").hide().addClass('close_content');
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".block-related > .block-content").addClass('open');
+			jQuery(".block-related > .block-content").addClass('open_content');
 			<?php $status = "open";?>
 		<?php endif;?>
 
@@ -365,7 +365,7 @@
 		<?php endif;?>
 
 		<?php if (Mage::getStoreConfig('heaven7_collapse/related/icon_select',Mage::app()->getStore())=="after"): ?>
-			jQuery('.block-related > .block-title > strong').before("<div id='related_icon' class='collapse_icon after <?php echo $status?>'></div>");
+			jQuery('.block-related > .block-title > strong').after("<div id='related_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 		
 		//add click event to .block-related > .block-title
@@ -380,10 +380,10 @@
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".block-related > .block-content").hasClass('open')) {
-				jQuery(".block-related > .block-content").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery(".block-related > .block-content").hasClass('open_content')) {
+				jQuery(".block-related > .block-content").slideUp($speed).removeClass('open_content').addClass('close_content');
 			} else {
-				jQuery(".block-related > .block-content").slideDown($speed).addClass('open').removeClass('close');
+				jQuery(".block-related > .block-content").slideDown($speed).addClass('open_content').removeClass('close_content');
 			}
 			
 		});
@@ -397,10 +397,10 @@
 	//<![CDATA[
 	jQuery(document).ready(function() {
 		<?php if (Mage::getStoreConfig('heaven7_collapse/upsell/defaultcollapsed_select',Mage::app()->getStore())==1): ?>
-			jQuery(".box-up-sell > div.std").hide().addClass('close');
+			jQuery("#upsell-product-table").hide().addClass('close');
 			<?php $status = "close";?>
 		<?php else:?>
-			jQuery(".box-up-sell > div.std").addClass('open');
+			jQuery("#upsell-product-table").addClass('open');
 			<?php $status = "open";?>
 		<?php endif; ?>
 
@@ -412,22 +412,22 @@
 			jQuery('.box-up-sell > h2').html(jQuery('.box-up-sell > h2').html()+"<div id='upsell_icon' class='collapse_icon after <?php echo $status?>'></div>");
 		<?php endif;?>
 
-		//add click event to .box-description > h2
-		jQuery(".box-description > h2").click(function()
+		//add click event to .box-up-sell > h2
+		jQuery(".box-up-sell > h2").click(function()
 		{
 			//define speed for effect
 			var $speed = 400;
 
-			<?php if (Mage::getStoreConfig('heaven7_collapse/upell/icon_select',Mage::app()->getStore())=="before"
+			<?php if (Mage::getStoreConfig('heaven7_collapse/upsell/icon_select',Mage::app()->getStore())=="before"
 					|| Mage::getStoreConfig('heaven7_collapse/upsell/icon_select',Mage::app()->getStore())=="after"): ?>
 				jQuery("#upsell_icon").animate({rotate: '+=180deg'}, $speed);
 			<?php endif;?>
 
 			//check to see if the class 'open' exists then run
-			if (jQuery(".box-up-sell > div.std").hasClass('open')) {
-				jQuery(".box-up-sell > div.std").slideUp($speed).removeClass('open').addClass('close');
+			if (jQuery("#upsell-product-table").hasClass('open')) {
+				jQuery("#upsell-product-table").slideUp($speed).removeClass('open').addClass('close');
 			} else {
-				jQuery(".box-up-sell > div.std").slideDown($speed).addClass('open').removeClass('close');
+				jQuery("#upsell-product-table").slideDown($speed).addClass('open').removeClass('close');
 			}
 		});
 	});

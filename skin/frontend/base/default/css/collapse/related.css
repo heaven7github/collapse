@@ -1,27 +1,22 @@
+.block-related  .block-title strong{
+    display:inline-block;
+}
+
 .block-related .block-title .collapse_icon{
-/*background: url('../../images/arrow-close.png') 99% 50% no-repeat;*/
-height: 20px;
-width: 20px; 
-display:block;
-line-height: 20px;
-cursor: pointer; 
-/*padding-right: 30px;
-border-radius: 7px;
--moz-border-radius: 7px;
--webkit-border-radius: 7px;
-border: 1px solid #CCC;
-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
--moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
--webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);*/
+    height: 20px;
+    width: 20px;
+    display:inline-block;
+    line-height: 20px;
+    cursor: pointer;
 }
  
 .block-related .block-title .before{float:left;}
 .block-related .block-title .after{float: right;} 
 
-.block-related .open:first-child{
-background: url('../../images/arrow-close.png') 99% 50% no-repeat;
+.block-related .open{
+    background: url('../../images/arrow-close.png') 99% 50% no-repeat;
 }
 
-.block-related .close:first-child{
-background: url('../../images/arrow-open.png') 99% 50% no-repeat;
+.block-related .close{
+    background: url('../../images/arrow-open.png') 99% 50% no-repeat;
 }

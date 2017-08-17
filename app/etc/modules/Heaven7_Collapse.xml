@@ -23,7 +23,7 @@
     <modules>
         <Heaven7_Collapse>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Heaven7_Collapse>
     </modules>
 </config>

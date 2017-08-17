@@ -2,15 +2,16 @@
 <layout version="0.1.0">
    <default>
     	<reference name="head">
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/description_select"><type>skin_css</type><name>css/collapse/description.css</name><params/></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/shortdescription_select"><type>skin_css</type><name>css/collapse/shortdescription.css</name><params/></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/compare_select"><type>skin_css</type><name>css/collapse/compare.css</name></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/mycart_select"><type>skin_css</type><name>css/collapse/mycart.css</name></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/poll_select"><type>skin_css</type><name>css/collapse/poll.css</name></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/tags_select"><type>skin_css</type><name>css/collapse/tags.css</name></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/productviewed_select"><type>skin_css</type><name>css/collapse/productviewed.css</name></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/related_select"><type>skin_css</type><name>css/collapse/related.css</name></action>
-			<action method="addItem" ifconfig="heaven7_collapse/heaven7_group/newsletter_select"><type>skin_css</type><name>css/collapse/newsletter.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/description/enabled_select"><type>skin_css</type><name>css/collapse/description.css</name><params/></action>
+			<action method="addItem" ifconfig="heaven7_collapse/shortdescription/enabled_select"><type>skin_css</type><name>css/collapse/shortdescription.css</name><params/></action>
+			<action method="addItem" ifconfig="heaven7_collapse/compare/enabled_select"><type>skin_css</type><name>css/collapse/compare.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/mycart/enabled_select"><type>skin_css</type><name>css/collapse/mycart.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/poll/enabled_select"><type>skin_css</type><name>css/collapse/poll.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/tags/enabled_select"><type>skin_css</type><name>css/collapse/tags.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/productviewed/enabled_select"><type>skin_css</type><name>css/collapse/productviewed.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/related/enabled_select"><type>skin_css</type><name>css/collapse/related.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/newsletter/enabled_select"><type>skin_css</type><name>css/collapse/newsletter.css</name></action>
+			<action method="addItem" ifconfig="heaven7_collapse/upsell/enabled_select"><type>skin_css</type><name>css/collapse/upsell.css</name></action>
 			
             <action method="addJs">
             	<script>jquery/jquery.min.js</script>
@@ -113,7 +114,7 @@
 				<script>calendar/calendar-setup.js</script>
 			</action>
 		</reference>
-
+		
 		<reference name="footer">
             <block type="core/template" template="collapse/js.phtml" name="collapse.js"></block>
         </reference>
